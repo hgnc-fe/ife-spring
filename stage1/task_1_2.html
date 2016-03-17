@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>任务一</title>
+    <title>任务二</title>
+    <link rel="stylesheet" href="css/task_1_2.css">
 </head>
 
 <body>
     <header>
-        <h1>网站一级标题</h1>
-        <nav>
+        <h1 class="logo">
+            <img src="images/baidu_logo.png" height="70" alt="">
+        </h1>
+        <nav class="nav-top">
             <ul>
                 <li><a href="#">导航链接1</a></li>
                 <li><a href="#">导航链接2</a></li>
@@ -18,10 +21,10 @@
             </ul>
         </nav>
     </header>
-    <article>
+    <article class="article">
         <h1>文章一级标题</h1>
-        <h2>文章二级标题</h2>
-        <section><span>文章作者</span>&nbsp;
+        <h2 class="text-gray m10">文章二级标题</h2>
+        <section class="article-info text-gray"><span>文章作者</span>&nbsp;
             <time>文章发表时间</time>
         </section>
         <section>
@@ -31,53 +34,53 @@
             <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落，<a href="#">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落.</p>
         </section>
     </article>
-    <article>
-        <h1>文章一级标题</h1>
-        <h2>文章二级标题</h2>
-        <section><span>文章作者</span>&nbsp;<span>文章发表时间</span></section>
+    <article class="article">
+        <h1>另一篇文章一级标题</h1>
+        <h2 class="text-gray m10">文章二级标题</h2>
+        <section class="article-info text-gray"><span>文章作者</span>&nbsp;<span>文章发表时间</span></section>
         <section>
             <p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落，段落这是一个很长很,段落这是一个很长很,段落这是一个很长很换行了</p>
             <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落，<a href="#">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落.</p>
             <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
-            <ul>
+            <ul class="list">
                 <li>列表项目1</li>
                 <li>列表项目2</li>
                 <li>列表项目3</li>
             </ul>
-            <h3>图片</h3>
-            <figure>
-                <figcaption>好看的图片</figcaption>
-                <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
-            </figure>
-            <figure>
-                <figcaption>好看的图片</figcaption>
-                <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
-            </figure>
-            <figure>
-                <figcaption>好看的图片</figcaption>
-                <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
-            </figure>
-            <figure>
-                <figcaption>好看的图片</figcaption>
-                <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
-            </figure>
         </section>
     </article>
-    <article>
-        <header>
-            <h1>最后一个文章标题</h1>
-            <h2>文章二级标题</h2>
-        </header>
-        <section><span>文章作者</span>&nbsp;
+    <article class="article">
+        <h2>图片</h2>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
+        </figure>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
+        </figure>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
+        </figure>
+        <figure>
+            <figcaption>好看的图片</figcaption>
+            <img src="http://7xlan5.com1.z0.glb.clouddn.com/angular_module.png" alt="">
+        </figure>
+    </article>
+    <article class="article">
+        <h1>最后一个文章标题</h1>
+        <h2 class="text-gray m10">文章二级标题</h2>
+        <section class="article-info text-gray"><span>文章作者</span>&nbsp;
             <time>文章发表时间</time>
         </section>
-        <ol>
+        <ol class="orderList">
             <li>排名1</li>
             <li>排名2</li>
             <li>排名3</li>
         </ol>
-        <p>下面是一个表格，给表格加了个border=1好让你看出是一个表格</p>
-        <table border="1">
+        <p>下面是一个表格，给表格加了个border=1好让你看出是一个表格,你们写的时候不要加</p>
+        <table>
             <thead>
                 <tr>
                     <th>表头</th>
@@ -114,39 +117,67 @@
                 </tr>
             </tfoot>
         </table>
-        <aside>
-            <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-            <h2>侧栏注册窗口标题</h2>
-            <div>
-                <form action="">
-                    <label for="">请出入邮箱地址：</label>
-                    <input type="email" placeholder="这是一个文本输入框">
-                    <p>邮箱地址请按照要求格式写入</p>
-                    <label for="">请输入密码：</label>
-                    <input type="password" placeholder="这是一个文本输入框">
-                    <label for="">请重复输入密码</label>
-                    <input type="password" placeholder="这是一个文本输入框">
-                    <p>密码请问6-16位英文数字</p>
-                    <label for="">性别：</label>
-                    <input type="radio" checked>男
-                    <input type="radio">女
-                    <label for="">城市:</label>
-                    <select name="" id="">
-                        <option value="">北京</option>
-                        <option value="">上海</option>
-                        <option value="" selected>广州</option>
-                        <option value="">深圳</option>
-                    </select>
-                    <label for="">爱好：</label>
-                    <input type="checkbox">运动
-                    <input type="checkbox" checked>艺术
-                    <input type="checkbox">科学 个人描述：
-                    <textarea cols="30" rows="3">这是多行文本，输入个人描述</textarea>
-                    <button>确认提交</button>
-                </form>
-            </div>
-        </aside>
     </article>
+    <aside>
+        <h1 class="aside-head">这里以后是一个侧栏，这是侧栏的标题</h1>
+        <div>
+            <form action="">
+                <div class="form-item">
+                    <label for="">请输入邮箱地址：</label>
+                    <div class="form-content">
+                        <input type="email" placeholder="这是一个文本输入框">
+                    </div>
+                </div>
+                <p class="error-info">邮箱地址请按照要求格式写入</p>
+                <div class="form-item">
+                    <label for="">请输入密码：</label>
+                    <div class="form-content">
+                        <input type="password" value="343243">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">请重复输入密码：</label>
+                    <div class="form-content">
+                        <input type="password" value="122323">
+                    </div>
+                </div>
+                <p class="error-info">密码请问6-16位英文数字</p>
+                <div class="form-item">
+                    <label for="">性别：</label>
+                    <div class="form-content">
+                        <input type="radio" checked>男
+                        <input type="radio">女
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">城市：</label>
+                    <div class="form-content">
+                        <select name="" id="">
+                            <option value="">北京</option>
+                            <option value="">上海</option>
+                            <option value="" selected>广州</option>
+                            <option value="">深圳</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">爱好：</label>
+                    <div class="form-content">
+                        <input type="checkbox">运动
+                        <input type="checkbox" checked>艺术
+                        <input type="checkbox">科学
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">个人描述：</label>
+                    <div class="form-content">
+                        <textarea cols="30" rows="3">这是多行文本，输入个人描述</textarea>
+                    </div>
+                </div>
+                <button>确认提交</button>
+            </form>
+        </div>
+    </aside>
     <footer>
         <p>版权所有 &copy;</p>
     </footer>
