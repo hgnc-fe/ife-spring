@@ -29,5 +29,6 @@ http://<organizationname>.github.io/<projectname/xxx.hello.html>
 
 如果以后每次切换到master提交则需要切换到pages分支并merge主分支，push后远程即可更新。
 
-[任务一](http://hgnc-fe.github.io/ife-spring/stage1/task_1_1.html)
-[任务二](http://hgnc-fe.github.io/ife-spring/stage1/task_1_2.html)
+- [任务一](http://hgnc-fe.github.io/ife-spring/stage1/task_1_1.html)
+- [任务二](http://hgnc-fe.github.io/ife-spring/stage1/task_1_2.html)
+- [任务三](http://hgnc-fe.github.io/ife-spring/stage1/task_1_3.html)
