@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ccc;
+	font-family: "微软雅黑"
+}
+article p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+.text-gray{
+	color: #555;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+
+header{
+	background-color: rgba(52, 53, 54, .8);
+	height: 70px;
+}
+.logo{
+	display: inline-block;
+}
+.logo img{
+	height: 70px;
+}
+.top-nav{
+	display: inline-block;
+	position: absolute;
+	top: 25px;
+	right: 30px;
+}
+.top-nav li.top-nav-item{
+	float: left;
+	margin-left: 28px;
+}
+.top-nav li.top-nav-item.active a{
+	color: #B69D9D;
+}
+.top-nav .top-nav-item a{
+	color: #fff;
+	text-decoration: none;
+}
+article,aside{
+	margin: 15px;
+	box-shadow: 2px 2px 2px rgba(255,12,56,.8);
+	border: 1px solid #ccc;
+	padding: 20px;
+	position: relative;
+	background: #fff;
+}
+.article{
+	width: 800px;
+}
+.article h1{
+	margin:5px;
+}
+.article h2{
+	margin: 5px;
+	font-size: 18px;
+}
+.article-info{
+	margin: 5px 7px;
+}
+.article .list{
+	padding-left: 4em;
+}
+figure{
+	display: inline-block;
+	border:1px solid #666;
+	width: 134px;
+	margin: 10px;
+}
+figcaption{
+	margin: 5px;
+	text-align: center;
+}
+figure img{
+	text-align: center;
+	width: 125px;
+	position: relative;
+	left: 5px;
+}
+table{
+	width: 800px;
+}
+thead{
+	color: #fff;
+	background-color: rgba(52, 53, 54, .8);
+}
+tfoot{
+	background-color: #ccc;
+}
+footer{
+	background: #000;
+	height: 50px;
+	line-height: 50px;
+}
+footer p{
+	color: #fff;
+	text-align: center;
+}
+aside{
+	width: 400px;
+	right: 10px;
+}
+.aside-title{
+	border-left: 3px solid #ccf;
+	padding-left: 10px;
+	font-size: 18px;
+	margin-bottom: 10px; 
+}
+form{
+	width: 380px;
+	padding-left: 10px;
+}
+.form-item{
+	margin: 10px 0;
+}
+.form-item label{
+	display: inline-block;
+	width: 130px;
+	text-align: right;
+}
+.form-item div.form-content{
+	display: inline-block;
+}
+p.error-info{
+	text-indent: 134px;
+	font-size: 12px;
+}
+form button{
+	width: 350px;
+	height: 50px;
+	background-color: #00e;
+	border-radius: 10px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 50px;
+}
