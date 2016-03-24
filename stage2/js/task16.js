@@ -6,31 +6,7 @@
  *    "上海": 40
  * };
  */
-var aqiData = {
-	// "北京":90,
-	// "上海":80,
-	// "广州":98,
-	// "深圳":92,
-	// "武汉":89,
-	// "杭州":79,
-	// "成都":85
-};
-
-function $(selector){
-	if(/^#/.test(selector)){
-		return document.getElementById(selector.substring(1))
-	}
-}
-
-function trim(str){
-	// attetion to condition test
-	var start = 0,end = str.length - 1
-	while(start < end && str[start] === ' ')
-		start++
-	while(start < end && str[end] === ' ')
-		end--
-	return str.substring(start,end+1)
-}
+var aqiData = {};
 
 const DOM = {
 	CITY_INPUT:$('#aqi-city-input'),

@@ -47,4 +47,5 @@ http://<organizationname>.github.io/<projectname/xxx.hello.html>
 
 ### 阶段二
 
-- [任务十六](http://hgnc-fe.github.io/ife-spring/stage1/task_16.html)
+- [任务十六](http://hgnc-fe.github.io/ife-spring/stage2/task16.html)
+- [任务十七](http://hgnc-fe.github.io/ife-spring/stage2/task17.html)

@@ -1,0 +1,43 @@
+.aqi-chart-wrap{
+	border: 1px solid rgba(23,45,67,.9);
+	box-shadow: 1px 1px 1px rgba(67,89,100,.7);
+	margin: 0 auto;
+	width: 800px;
+	/* css3渐变：参见http://www.w3cplus.com/css3/new-css3-linear-gradient.html */
+	background-image: linear-gradient(to right bottom, #000, #010,#020,#030,#040,#050,#060);
+	height: 512px;
+	position: relative;
+	overflow: hidden;	
+}
+
+.aqi-chart-wrap .aqi-chat-title h1{
+	text-align: center;
+	color: orange;
+}
+.chart-block{
+	position: absolute;
+	cursor: pointer;
+	float: left;
+	border-radius: 5px;
+	bottom: 0;
+	-webkit-animation:anima 3s infinite linear;
+}
+
+@-webkit-keyframes anima 
+{
+	0% {
+		opacity: .5;
+		border:1px solid rgba(59,235,235,0.1);
+		box-shadow:0 1px 2px rgba(255,255,255,0.1);
+	}
+	50% {
+		opacity: 1;
+		border:1px solid rgba(59,235,235,1);
+		box-shadow:0 1px 30px rgba(59,255,255,1);
+	}
+	100%{
+		opacity: .5;
+		box-shadow:0 1px 2px rgba(255,255,255,0.1);
+		border:1px solid rgba(59,235,235,0.1);
+	}
+}
