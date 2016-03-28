@@ -31,8 +31,21 @@ http://<organizationname>.github.io/<projectname/xxx.hello.html>
 
 ## 水平和垂直居中问题
 
+块元素的最简单的居中方案就是指定一个宽度，并将其左右的`margin`值设置为`auto`
+inline-block的元素设置`text-align:center`，例如：img,input等
+
 - [不同情况下的居中方案](https://css-tricks.com/centering-css-complete-guide/)
 - [居中代码生成器](http://howtocenterincss.com/)
+
+## 子元素设置浮动后，父元素的高度为0的解决方案
+
+给父元素加入`overflow:hidden`即可。
+
+任务七的section2中有4个并列显示的inline-block元素，需要这4个元素均分宽度，所以每个元素的宽度设置为25%，但是问题出现了最后一个元素跑到下面去了，最后给父元素设置了`font-size:0`属性后完美解决。
+
+## 如何控制背景图片的大小
+
+设置`background-size`属性即可，该属性有两个参数，分别表示宽高。
 
 ## 任务列表
 
@@ -44,6 +57,7 @@ http://<organizationname>.github.io/<projectname/xxx.hello.html>
 - [任务四](http://hgnc-fe.github.io/ife-spring/stage1/task_1_4.html)
 - [任务五](http://hgnc-fe.github.io/ife-spring/stage1/task_1_5.html)
 - [任务六](http://hgnc-fe.github.io/ife-spring/stage1/task_1_6.html)
+- [任务七](http://hgnc-fe.github.io/ife-spring/stage1/task_1_7.html)
 
 ### 阶段二
 
