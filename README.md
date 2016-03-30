@@ -58,6 +58,7 @@ inline-block的元素设置`text-align:center`，例如：img,input等
 - [任务五](http://hgnc-fe.github.io/ife-spring/stage1/task_1_5.html)
 - [任务六](http://hgnc-fe.github.io/ife-spring/stage1/task_1_6.html)
 - [任务七](http://hgnc-fe.github.io/ife-spring/stage1/task_1_7.html)
+- [任务八](http://hgnc-fe.github.io/ife-spring/stage1/task_1_8.html)
 
 ### 阶段二
 
