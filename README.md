@@ -47,6 +47,34 @@ inline-block的元素设置`text-align:center`，例如：img,input等
 
 设置`background-size`属性即可，该属性有两个参数，分别表示宽高。
 
+## 更加语义化的html5
+
+我们常用普通文本框input做搜索框，但是html5也提供了类型为`search`的input。
+
+html5的`progress`标签设置css有兼容性问题，参见[张鑫旭的博客](http://www.zhangxinxu.com/wordpress/2013/02/html5-progress-element-style-control/)
+
+## 左边侧栏定宽，右侧内容自适应
+
+```html
+article
+	aside
+	section
+```
+
+```css
+article{
+	margin-left:250px;
+}	
+aside{
+	width:260px;
+	margin-left:-260px;
+	float:left
+}
+section{
+	width:100%;
+}
+```
+
 ## 任务列表
 
 ### 阶段一
@@ -59,6 +87,7 @@ inline-block的元素设置`text-align:center`，例如：img,input等
 - [任务六](http://hgnc-fe.github.io/ife-spring/stage1/task_1_6.html)
 - [任务七](http://hgnc-fe.github.io/ife-spring/stage1/task_1_7.html)
 - [任务八](http://hgnc-fe.github.io/ife-spring/stage1/task_1_8.html)
+- [任务九](http://hgnc-fe.github.io/ife-spring/stage1/task_1_9.html)
 
 ### 阶段二
 

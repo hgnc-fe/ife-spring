@@ -1,0 +1,813 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 56px;
+    background-color: rgb(33, 137, 191);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.w70 {
+    width: 70px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.text-red {
+    color: red;
+}
+
+.border-yellow {
+    border: 1px solid #f8d573 !important;
+}
+
+header div {
+    display: inline-block;
+}
+
+header .logo {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 36px;
+    height: 36px;
+    background: url(../images/task_8_logo.png) no-repeat;
+}
+
+header .search-input {
+    width: 250px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin-top: -7px;
+    margin-right: 42px;
+    border-radius: 24px;
+    background-color: #fff;
+    text-indent: 25px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    transition: width .4s ease-out;
+}
+
+header .search-input:focus {
+    width: 300px;
+}
+
+header .bar-right {
+    height: 56px;
+}
+
+header .login-box {
+    margin-right: 95px;
+    line-height: 56px;
+    color: #fff;
+}
+
+header .login-box a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.zoom-icon {
+    width: 17px;
+    height: 17px;
+    background: url(../images/icons/zoom.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    left: -70px;
+    top: 2px;
+}
+
+.login-icon {
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    background: url(../images/icons/login.png) no-repeat;
+}
+
+.icon-reference {
+    background: url(../images/icons/icon-reference.png) no-repeat;
+}
+
+.icon-star {
+    background: url(../images/icons/icon-star.png) no-repeat;
+}
+
+.icon-location {
+    background: url(../images/icons/icon-location.png) no-repeat;
+}
+
+.icon-note {
+    background: url(../images/icons/icon-note.png) no-repeat;
+}
+
+.icon-arrow-right {
+    background: url(../images/icons/icon-arrow-right.png) no-repeat;
+}
+
+.icon-arrow-down {
+    background: url(../images/icons/icon-arrow-down.png) no-repeat;
+}
+
+.icon-folder-close {
+    background: url(../images/icons/icon-folder-close.png) no-repeat;
+}
+
+.icon-folder-open {
+    background: url(../images/icons/icon-folder-open.png) no-repeat;
+}
+
+.icon-document {
+    background: url(../images/icons/icon-document.png) no-repeat;
+}
+
+article.main {
+    background-color: #eeeeed;
+    margin-left: 260px;
+}
+
+article.main aside {
+    min-height: 1200px;
+    float: left;
+    margin-left: -260px;
+    width: 260px;
+    background-color: rgb(42, 46, 41);
+}
+
+article.main section {
+    width: 100%;
+}
+
+aside .nav li {
+    list-style: none;
+}
+
+aside .nav li.nav-header {
+    height: 150px;
+}
+
+.profile {
+    height: 90px;
+}
+
+.avatar {
+    width: 51px;
+    height: 51px;
+    border: 2px solid rgb(185, 186, 189);
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.avatar img {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.user {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    font-size: 16px;
+    font-family: "黑体";
+    color: rgb(226, 226, 226);
+}
+
+.collection {
+    font-size: 0;
+    height: 70px;
+}
+
+.collection > div {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "黑体";
+    color: #6e8095;
+    display: inline-block;
+    width: 50%;
+}
+
+.star div {
+    text-indent: 60px;
+}
+
+.follower {
+    border-left: 1px solid #ccc;
+}
+
+.follower div {
+    text-indent: 35px;
+}
+
+aside .nav li a i.icon {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+aside .nav > li.active > a > span.label:first-of-type {
+    color: #fff;
+}
+
+aside .nav > li > a {
+    display: inline-block;
+    padding: 20px 47px;
+    text-decoration: none;
+    color: #6e8095;
+    font-size: 12px;
+    font-family: "黑体";
+}
+
+aside .nav li a span.label {
+    padding-left: 18px;
+}
+
+.nav-second-level > li {
+    padding-left: 50px;
+}
+
+aside .nav.nav-second-level {
+    margin: -10px 0;
+}
+
+aside .nav.nav-second-level > li > a {
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+aside .nav.nav-second-level .nav-third-level > li > a {
+    display: inline-block;
+    padding: 5px 48px;
+}
+
+aside .nav.nav-second-level .nav-third-level > li > a span.label {
+    padding-left: 5px;
+}
+
+.main aside .nav > li.active:hover {
+    background-color: #383d4e;
+}
+
+
+/*面包屑导航*/
+
+.main section .nav-bread {
+    margin-bottom: 10px;
+}
+
+.main section .nav-bread li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.main section .nav-bread li::after {
+    content: '/';
+    position: absolute;
+    color: #b6b5b5;
+    left: -30px;
+}
+
+.main section .nav-bread li:first-child::after {
+    content: '';
+}
+
+.main section .nav-bread li:last-child a {
+    color: #2189bf;
+}
+
+.main section .nav-bread li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 13px;
+    font-family: "黑体";
+}
+
+.main section .nav-bread li:first-of-type {
+    padding-left: 20px;
+}
+
+.main section .panel-container {
+    width: 892px;
+    margin: 0 auto;
+}
+
+.panel-container .panel {
+    margin-bottom: 10px;
+}
+
+.panel-container .panel .panel-item {
+    float: left;
+}
+
+.panel-container .panel .panel-item label {
+    color: #666;
+    margin-right: 10px;
+}
+
+.panel-container .panel .panel-item select {
+    border: 1px solid #ccc;
+    height: 24px;
+    line-height: 24px;
+    /*appearance 属性允许您使元素看上去像标准的用户界面元素。*/
+    -webkit-appearance: none;
+    outline: none;
+    background: url(../images/icons/select-icon.png) no-repeat 94% 9px;
+}
+
+.row {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px rgba(123, 234, 121, .8);
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding-top: 10px;
+}
+
+.panel1 {
+    height: 70px;
+    margin-top: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.panel1 .search-btn {
+    width: 50px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: #388ac1;
+    color: #fff;
+    border: none;
+}
+
+.panel-container .panel .panel-item .line {
+    margin-bottom: 10px;
+}
+
+.change {
+    line-height: 37px;
+    width: 27px;
+    height: 37px;
+    display: inline-block;
+    background: url(../images/icons/change.png) no-repeat;
+    position: relative;
+    top: -23px;
+    left: -2px;
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.row2 {
+    position: relative;
+    height: 112px;
+}
+
+.row2 div,
+.row2 button {
+    float: left;
+}
+
+button.back,
+button.forward {
+    text-indent: -1000px;
+    width: 25px;
+    height: 100px;
+}
+
+button.back::after,
+button.forward::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: 2px solid #ccc;
+}
+
+button.forward::after {
+    top: 54px;
+    left: 740px;
+    border-bottom: none;
+    border-left: none;
+}
+
+button.back::after {
+    top: 54px;
+    left: 10px;
+    border-top: none;
+    border-right: none;
+}
+
+.row2 .block {
+    box-sizing: border-box;
+    width: 108px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.row2 .block:hover {
+    border-top: 2px solid #00f;
+}
+
+.row2 .block.active {
+    border-top: 2px solid #00f;
+}
+
+.row2 .block .title {
+    margin: 20px 0 25px 0;
+    font-size: 12px;
+}
+
+.row2 .block .price em {
+    font-style: normal;
+    margin-left: -45px;
+    font-size: 13px;
+    color: #aeaeae;
+}
+
+.row2 .block .price strong {
+    font-size: 21px;
+    color: orange;
+}
+
+.row2 .history {
+    float: right;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 70px;
+    height: 98px;
+    line-height: 98px;
+    color: #535353;
+    margin-right: 5px;
+    padding-left: 48px;
+    background: url(../images/icons/icon-calendar.png) 3px no-repeat;
+}
+
+.row3 {
+    height: 100px;
+}
+
+.row3 h3 {
+    font-family: "微软雅黑";
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.row3 .block-list {
+    margin-top: 10px;
+}
+
+.row3 .block-list > div[class^='block-'] {
+    position: relative;
+    float: left;
+    width: 188px;
+    height: 57px;
+    border: 1px solid #ccc;
+    border-left-width: 4px;
+    margin: 0 16px;
+}
+
+.row3 .block-list > div[class^='block-']:first-child {
+    margin-left: 0;
+}
+
+.row3 .block-list > div[class^='block-'] div {
+    position: absolute;
+    display: inline-block;
+}
+
+.row3 .block-list .text {
+    left: 20px;
+    top: 3px;
+}
+
+.row3 .block-list .content {
+    width: 60px;
+    height: 48px;
+    top: 5px;
+    right: 10px;
+}
+
+.row3 .block-list > div:first-child .content {
+    background-color: #43b29e;
+}
+
+.row3 .block-list > div:first-child {
+    border-left-color: #43b29e;
+}
+
+.row3 .block-list > div:nth-child(2) .content {
+    background-color: #388ac1;
+}
+
+.row3 .block-list > div:nth-child(2) {
+    border-left-color: #388ac1;
+}
+
+.row3 .block-list > div:nth-child(3) .content {
+    background-color: #d04a36;
+}
+
+.row3 .block-list > div:nth-child(3) {
+    border-left-color: #d04a36;
+}
+
+.row3 .block-list > div:last-child .content {
+    background-color: #e2cd46;
+}
+
+.row3 .block-list > div:last-child {
+    border-left-color: #e2cd46;
+}
+
+.row3 .block-list .text p:first-child {
+    margin-bottom: 5px;
+}
+
+.row3 .block-list .text p:last-child {
+    color: #666;
+}
+
+.row2,
+.row4,
+.row5 {
+    border: none;
+}
+
+.row4 .panel,
+.row5 .panel {
+    padding: 2px 5px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ced1d4;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+}
+
+.row5 .panel {
+    height: auto;
+}
+
+.row4 .panel .panel-head,
+.row5 .panel .panel-head {
+    height: 41px;
+    border-bottom: 1px solid #e7e8eb;
+    background-color: #f4f5f6;
+    line-height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #aaa;
+}
+
+.row4 {
+    max-height: 325px;
+}
+
+.left-panel ul {
+    padding-top: 28px;
+    position: relative;
+    height: 30px;
+}
+
+.left-panel ul li {
+    text-align: center;
+    width: 80px;
+    background-color: #f4f5f6;
+    list-style: none;
+    float: left;
+    margin-right: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.left-panel ul li:first-child {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 20px 0;
+    margin-top: -12px;
+}
+.tab-content table td{
+    height: 28px;
+}
+.tab-content table td:hover{
+    background: #aaa;
+}
+
+table {
+    /*合并表格边框*/
+    border-collapse: collapse;
+    width: 500px;
+    margin: 10px;
+}
+
+td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.right-panel .title {
+    font-size: 15px;
+    font-family: "黑体";
+    margin: 8px 0;
+}
+
+.hr {
+    width: 285px;
+    height: 2px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.hr-top {
+    top: 12px;
+}
+
+.hr-tail {
+    top: -15px;
+}
+
+.divider {
+    display: inline-block;
+    width: 2px;
+    height: 55px;
+    background-color: #ccc;
+    position: relative;
+    top: 10px;
+}
+
+.price,
+.response {
+    display: inline-block;
+    width: 142px;
+}
+
+.detail {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: "微乳雅黑";
+}
+
+.right-panel .panel-foot {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: "微乳雅黑";
+}
+
+.right-panel .panel-foot button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 25px;
+    background-color: #2189bf;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.right-panel .panel-foot button:hover {
+    background-color: #3179aa;
+}
+
+.row5 .calendar table {
+    width: 343px;
+}
+
+.row5 .calendar table tr:first-child {
+    height: 30px;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid gray;
+}
+
+.row5 .calendar table tr td {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    border: none;
+}
+
+.row5 .calendar tr:nth-child(2) td:nth-child(6),
+.row5 .calendar tr:nth-child(2) td:last-child,
+.row5 .calendar tr:nth-child(3) td:nth-child(6),
+.row5 .calendar tr:nth-child(3) td:last-child,
+.row5 .calendar tr:nth-child(4) td:nth-child(6),
+.row5 .calendar tr:nth-child(4) td:last-child,
+.row5 .calendar tr:nth-child(5) td:nth-child(6),
+.row5 .calendar tr:nth-child(5) td:last-child,
+.row5 .calendar tr:last-child td:nth-child(6),
+.row5 .calendar tr:last-child td:last-child {
+    color: red;
+}
+
+.date-control {
+    margin: 20px;
+    margin-left: 10px;
+}
+
+.date-control select:first-child,
+.date-control select:nth-child(3),
+.date-control select:last-child {
+    width: 70px;
+}
+
+.date-control select:nth-child(2) {
+    width: 80px;
+}
+
+.date-control button {
+    outline: none;
+    border: 1px solid #8E8B8B;
+    background-color: #fff;
+}
+
+.rank table {
+    margin: 35px 20px;
+    width: auto;
+    font-size: 14px;
+}
+
+.rank table td {
+    height: 23px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.rank table tr td:last-child {
+    width: 300px;
+}
+
+.rank table tr td:last-child progress {
+    width: 140px;
+    height: 5px;
+    background-color: #dcdcdc;
+    vertical-align: middle;
+    /*color: orange;*/
+}
+
+progress::-webkit-progress-bar {
+    background: #dcdcdc;
+}
+
+progress::-webkit-progress-value {
+    background: #7ecaf0;
+}
+.rank table tr:nth-child(2) progress::-webkit-progress-value{
+    background-color: #ed6e52;
+}
+.rank table tr:nth-child(3) progress::-webkit-progress-value{
+    background-color: #ef8150;
+}
+
+.rank table tr:nth-child(4) progress::-webkit-progress-value{
+    background-color: #f19e4f;
+}
