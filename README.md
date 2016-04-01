@@ -75,6 +75,11 @@ section{
 }
 ```
 
+## 弹性盒模型
+
+在Flex容器中，当margin设置为“auto”时，设置自动的垂直边距将使该项目完全集中两个轴。(水平垂直居中)，详情参见:[sf.gg](https://segmentfault.com/a/1190000002910324)
+
+
 ## 任务列表
 
 ### 阶段一
@@ -88,6 +93,7 @@ section{
 - [任务七](http://hgnc-fe.github.io/ife-spring/stage1/task_1_7.html)
 - [任务八](http://hgnc-fe.github.io/ife-spring/stage1/task_1_8.html)
 - [任务九](http://hgnc-fe.github.io/ife-spring/stage1/task_1_9.html)
+- [任务十](http://hgnc-fe.github.io/ife-spring/stage1/task_1_10.html)
 
 ### 阶段二
 
