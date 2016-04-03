@@ -77,8 +77,7 @@ section{
 
 ## 弹性盒模型
 
-在Flex容器中，当margin设置为“auto”时，设置自动的垂直边距将使该项目完全集中两个轴。(水平垂直居中)，详情参见:[sf.gg](https://segmentfault.com/a/1190000002910324)
-
+在Flex容器中，当margin设置为“auto”时，设置自动的垂直边距将使该项目完全集中两个轴。(水平垂直居中)，详情参见:[sf.gg](https://segmentfault.com/a/1190000002910324)使用弹性盒模型我们在制作导航菜单的时候我们不需要设置子元素li浮动或者display:inline-block,只需要声明ul为弹性容器即可。
 
 ## 任务列表
 
