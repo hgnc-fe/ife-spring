@@ -39,3 +39,6 @@ function addClass(element,className){
 function setClass(element,className){
 	element.className = className
 }
+function html(element,html){
+	return arguments.length === 2 ? element.innerHTML = html : element.innerHTML
+}

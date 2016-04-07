@@ -93,8 +93,11 @@ section{
 - [任务八](http://hgnc-fe.github.io/ife-spring/stage1/task_1_8.html)
 - [任务九](http://hgnc-fe.github.io/ife-spring/stage1/task_1_9.html)
 - [任务十](http://hgnc-fe.github.io/ife-spring/stage1/task_1_10.html)
+- [任务十一](http://hgnc-fe.github.io/ife-spring/stage1/task_1_11.html)
+- [任务十二](http://hgnc-fe.github.io/ife-spring/stage1/task_1_12.html)
 
 ### 阶段二
 
 - [任务十六](http://hgnc-fe.github.io/ife-spring/stage2/task16.html)
 - [任务十七](http://hgnc-fe.github.io/ife-spring/stage2/task17.html)
+- [任务十八](http://hgnc-fe.github.io/ife-spring/stage2/task18.html)
