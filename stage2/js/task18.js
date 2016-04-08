@@ -1,5 +1,5 @@
 var validate = function(input) {
-    const REG_EXP = /^[1-9]\d*/
+    const REG_EXP = /^[1-9]\d*$/
     var flag = REG_EXP.test(input)
     if (!flag){
     	alert('输入不合法！')
