@@ -101,10 +101,13 @@ nav.top-nav {
 .icon-login {
     width: 14px;
     height: 17px;
+    vertical-align: middle;
     background: url(../images/icons/icon-login.png) no-repeat;
 }
 
 .login-box a {
+    color: #E53C3C;
+    font-size: 14px;
     margin-left: 10px;
 }
 
@@ -113,17 +116,15 @@ nav.top-nav {
     margin: 0 auto;
 }
 
-.section {
-    margin: 5px 0;
-}
-
 .section-1 {
-    width: 1280px;
+    /*width: 1280px;*/
     margin-left: auto;
     margin-right: auto;
     height: 650px;
     position: relative;
-    background: url(../images/section1-bg.jpg) no-repeat;
+    /*background: url(../images/section1-bg.jpg) no-repeat;*/
+    background:url(../images/section1-bg.jpg) no-repeat center center;
+    background-size: 100%;
 }
 
 .section-1 .section-desc {
@@ -189,6 +190,7 @@ nav.top-nav {
 }
 
 .section-3 {
+    padding-top: 20px;
     background-color: #EDEAEA;
     height: 250px;
 }
@@ -206,6 +208,7 @@ nav.top-nav {
 
 .section-4 {
     background: url(../images/section4-bg.png) no-repeat;
+    background-size: cover;
     height: 300px;
     text-align: center;
 }
@@ -771,6 +774,10 @@ nav.top-nav {
     height: 25px;
     margin: 0 0.5em;
     background: url(../images/icons/icons.png) no-repeat;
+    transition: all .5s;
+}
+.section-9 .icons li:hover{
+    transform:scale(1.5);
 }
 .section-9 .icons li.qq{
     background-position: 0 0;
