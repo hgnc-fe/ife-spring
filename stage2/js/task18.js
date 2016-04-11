@@ -1,5 +1,5 @@
 var validate = function(input) {
-    const REG_EXP = /^[1-9]\d*$/
+    const REG_EXP = /^(0|-?[1-9]\d*)$/
     var flag = REG_EXP.test(input)
     if (!flag){
     	alert('输入不合法！')
@@ -41,7 +41,7 @@ var render = function() {
         htmlStr += ['<div data-index="',k,'" class="div">', data[k], '</div>'].join('')
     html($('#container'),htmlStr)
 }
-// event dalidate
+// event daligate
 $('#control').addEventListener('click', function(ev) {
     switch (ev.target.id) {
         case 'leftInBtn':
