@@ -14,9 +14,9 @@ function trim(str) {
         end = str.length - 1
     while (start < end && str[start] === ' ')
         start++
-        while (start < end && str[end] === ' ')
-            end--
-            return str.substring(start, end + 1)
+    while (start < end && str[end] === ' ')
+        end--
+    return str.substring(start, end + 1)
 }
 
 function css(element, json) {

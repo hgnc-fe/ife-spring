@@ -1,14 +1,83 @@
-// 基于任务20，将任务20的代码进行抽象、封装，然后在此基础上实现如图中的两个需求：Tag输入和兴趣爱好输入
-// 如示例图上方，实现一个tag输入框
-// 要求遇到用户输入空格，逗号，回车时，都自动把当前输入的内容作为一个tag放在输入框下面。
-// Tag不能有重复的，遇到重复输入的Tag，自动忽视。
-// 每个Tag请做trim处理
-// 最多允许10个Tag，多于10个时，按照录入的先后顺序，把最前面的删掉
-// 当鼠标悬停在tag上时，tag前增加删除二字，点击tag可删除
-// 如示例图下方，实现一个兴趣爱好输入的功能
-// 通过一个Textarea进行兴趣爱好的输入，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为间隔。
-// 当点击“确认兴趣爱好”的按钮时，将textarea中的输入按照你设定的间隔符，拆解成一个个的爱好，显示在textarea下方
-// 爱好不能重复，所以在下方呈现前，需要做一个去重
-// 每个爱好内容需要做trim处理
-// 最多允许10个兴趣爱好，多于10个时，按照录入的先后顺序，把最前面的删掉
+/**
+ * @param {[Boolean]} canDelete [是否可以删除数组中的元素，默认为false]
+ */
+var Queue = function(canDelete){
+	this.data = []
+	this.canDelete = !!canDelete
+}
 
+Queue.prototype.capacity = 10
+
+Queue.prototype._unique = function(value){
+	for(var i = 0,len = this.data.length;i < len;i++)
+		if(value === this.data[i])
+			return false
+	return true	
+}
+
+Queue.prototype.put = function(value){
+	
+	if(!this._unique(value))
+		return
+	if(this.data.length < this.capacity)
+		this.data.push(value)
+	else{
+		this.data.shift()
+		this.data.push(value)
+	}
+}
+
+Queue.prototype.delete = function(index){
+	if(this.canDelete)
+		this.data.splice(index,1)
+}
+
+Queue.prototype.render = function(container){
+	var htmlStr = ''
+	if(this.canDelete)
+		htmlStr = this.data.map(function(d,index){
+			return '<div class="canDelete" data-index="' + index + '">' + d + '</div>'
+		}).join('')
+	else
+		htmlStr = this.data.map(function(d,index){
+			return '<div data-index="' + index + '">' + d + '</div>'
+		}).join('')
+	container.innerHTML = htmlStr
+}
+
+var q1 = new Queue(true)
+var q2 = new Queue()
+
+$('#tagInput').addEventListener('keyup',function(ev){
+	// enter --> 13
+	var val = this.value
+	const SUFFIX_REG = /,|，|\s$/
+	if(13 === ev.keyCode || SUFFIX_REG.test(val)){
+		val = trim(val.replace(SUFFIX_REG,''))
+		if(!!val)
+			q1.put(val)
+		// console.log(q1.data)
+		this.value = ''
+		q1.render($('#tag_container'))
+	}
+})
+
+$('#tag_container').addEventListener('click',function(ev){
+	if('div' === ev.target.tagName.toLowerCase()){
+		var index = ev.target.getAttribute('data-index')
+		q1.delete(index)
+		q1.render($('#tag_container'))
+	}
+})
+
+$('button')[0].addEventListener('click',function(){
+	var vals = $('textarea')[0].value.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/).filter(function(d){
+    	return !!trim(d)
+    })
+    vals.forEach(function(d){
+    	q2.put(d)
+    	// console.log(q2.data)
+    })
+    q2.render($('#intrest_container'))
+    $('textarea')[0].value = ''
+})
