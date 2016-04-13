@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务22</title>
+    <link rel="stylesheet" href="css/task22.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="node root">
+            a
+            <div class="node level1">
+                b
+                <div class="node level2">
+                    d
+                    <div class="node level3">h</div>
+                    <div class="node level3">i</div>
+                </div>
+                <div class="node level2">
+                    e
+                    <div class="node level3">j</div>
+                    <div class="node level3">k</div>
+                </div>
+            </div>
+            <div class="node level1">
+                c
+                <div class="node level2">
+                    f
+                    <div class="node level3">l</div>
+                        <div class="node level3">m</div>    
+                </div>
+                <div class="node level2">
+                    g
+                    <div class="node level3">n</div>
+                    <div class="node level3">o</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="preOrderBtn">先序遍历</button>
+        <button id="inOrderBtn">中序遍历</button>
+        <button id="postOrderBtn">后续遍历</button>
+    </div>
+</body>
+<script src="js/util.js"></script>
+<script src="js/task22.js"></script>
+</html>

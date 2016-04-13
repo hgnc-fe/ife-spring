@@ -78,6 +78,12 @@ var selectionSort = function() {
                 if (data[minIndex] > data[j]) {
                     swap(data, minIndex, j)
                     render()
+                    css($('.div')[j],{
+                        background:'blue'
+                    })
+                    css($('.div')[minIndex],{
+                        background:'green'
+                    })
                 }
                 j++
             } else {
@@ -85,6 +91,7 @@ var selectionSort = function() {
                 j = i + 1
             }
         } else {
+            render()
             clearInterval(timer)
             $('#sortBtn').removeAttribute('disabled')
             return alert('排序完成，花费' + (Date.now() - startTime) + 'ms')
