@@ -256,6 +256,12 @@ em.drop-down-text {
     font-family: "微软雅黑";
     float: left;
 }
+.row3 > .left p:first-of-type:first-letter{
+    float: left;
+    font-size: 68px;
+    color: #f5e327;
+    margin: 20px 10px 20px 0;
+}
 
 .row3 .left p {
     text-indent: 2em;
