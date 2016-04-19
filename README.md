@@ -105,3 +105,4 @@ section{
 - [任务二十](http://hgnc-fe.github.io/ife-spring/stage2/task20.html)
 - [任务二十一](http://hgnc-fe.github.io/ife-spring/stage2/task21.html)
 - [任务二十二](http://hgnc-fe.github.io/ife-spring/stage2/task22.html)
+- [任务二十三](http://hgnc-fe.github.io/ife-spring/stage2/task23.html)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task23</title>
+	<link rel="stylesheet" href="css/task23.css">
+</head>
+<body>
+	<div class="root node">
+		1
+		<div class="node level1">
+			2
+			<div class="node level2">
+				4
+				<div class="node level3">
+					2
+				</div>
+				<div class="node level3">
+					3
+				</div>
+				<div class="node level3">
+					1
+				</div>
+			</div>
+			<div class="node level2">
+				2
+				<div class="node level3">
+					1
+				</div>
+				<div class="node level3">
+					3
+				</div>
+			</div>
+		</div>
+		<div class="node level1">
+			1
+			<div class="node level2">
+				5
+				<div class="node level3">
+					7
+					<div class="node level4">
+						1
+					</div>
+					<div class="node level4">
+						7
+					</div>
+				</div>
+				<div class="node level3">
+					8
+				</div>
+			</div>
+		</div>
+		<div class="node level1">
+			3
+			<div class="node level1">
+				7
+				<div class="node level2">6</div>
+				<div class="node level2">7</div>
+			</div>
+		</div>
+	</div>
+	<div class="controls">
+		<!-- 遍历 -->
+		<div class="traversal">
+			<button id="traverseDFBtn">深度优先遍历</button>
+			<button id="traverseBFBtn">广度优先遍历</button>
+		</div>
+		<!-- 搜索 -->
+		<div class="search">
+			<input type="search">
+			<button id="DFSearchBtn">深度优先搜索</button>
+			<button id="BFSearchBtn">广度优先搜索</button>
+		</div>	
+	</div>
+	<script src="js/util.js"></script>
+	<script src="js/task23.js"></script>
+</body>
+</html>
