@@ -1,0 +1,76 @@
+/* common css */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+p{
+	text-indent: 2em;
+}
+article,section{
+	padding: 20px;
+	background-color: #eee;
+	border: 1px solid #999;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* specail css */
+.main{
+	position: relative;
+	margin: 20px;
+	overflow: hidden;
+	min-height: 500px;
+}
+.team-logo{
+	width: 158px;
+}
+.team-name{
+	display: inline;
+  	position: relative;
+  	top: -40px;
+  	left: 5px;
+}
+.team-introduce{
+	position: absolute;
+	left: 230px;
+	right: 130px;
+}
+.team-introduce h2{
+	margin: 10px;
+}
+.team-introduce h3{
+	margin: 8px;
+}
+.team-members{
+	position: absolute;
+	right: 20px;
+	width: 90px;
+	padding: 0 5px;
+}
+li.member-item{
+	margin: 5px 0;
+	list-style: none;
+}
+.member-list li:nth-of-type(1){
+	margin-top: 10px;
+}
+.member-item a{
+	padding-left: 5px;
+}
+img.member-logo{
+	width: 80px;
+	height: 80px;
+}

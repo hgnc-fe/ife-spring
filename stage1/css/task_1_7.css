@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+header {
+    height: 60px;
+}
+
+header .logo {
+    height: 60px;
+    line-height: 60px;
+    left: 7%;
+    display: inline-block;
+    width: 200px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #4e3a4f;
+    text-align: center;
+    background: url(../images/logo.png) left no-repeat;
+    background-size: 16% 50%;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header .logo,
+header nav.top-nav,
+header .login-box {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav.top-nav {
+    position: relative;
+    left: 20%;
+}
+
+.top-menu-item {
+    display: inline-block;
+    color: #000;
+    list-style: none;
+    width: 70px;
+    text-align: center;
+    transition:color 0.4s ease-in-out;
+}
+.top-menu-item a:hover{
+    color: #f00;
+}
+
+.top-menu-item a {
+    text-decoration: none;
+    color: #534141;
+    font-size: 14px;
+}
+.top-menu .move{
+    position: absolute;
+    width: 70px;
+    border-top: 2px solid #e53c3c;
+    left: 0;
+    top: 55px;
+    transition:left 0.5s ease-in-out;
+}
+.top-menu li:first-child:hover~.move{
+    left: 0;
+}
+.top-menu li:nth-child(2):hover~.move{
+    left: 72px;
+}
+.top-menu li:nth-child(3):hover~.move{
+    left: 147px;
+}
+.top-menu li:nth-child(4):hover~.move{
+    left: 226px;
+}
+.top-menu li:nth-child(5):hover~.move{
+    left: 298px;
+}
+
+.login-box {
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.login-box a {
+    text-decoration: none;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.icon-login {
+    width: 14px;
+    height: 17px;
+    vertical-align: middle;
+    background: url(../images/icons/icon-login.png) no-repeat;
+}
+
+.login-box a {
+    color: #E53C3C;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.main {
+    min-width: 1280px;
+    margin: 0 auto;
+}
+
+.section-1 {
+    /*width: 1280px;*/
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    position: relative;
+    /*background: url(../images/section1-bg.jpg) no-repeat;*/
+    background:url(../images/section1-bg.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.section-1 .section-desc {
+    position: absolute;
+    left: 120px;
+    top: 250px;
+    color: #fff;
+}
+
+.section-1 .section-desc h1 {
+    font-size: 60px;
+    font-weight: normal;
+    font-family: Arial;
+}
+
+.section-1 .section-desc p {
+    font-size: 22px;
+    margin: 30px 0 60px 0;
+}
+
+.section-1-btn {
+    width: 300px;
+    height: 60px;
+    background-color: #E53C3C;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    border: none;
+    outline: none;
+    transition: all .25s ease-in-out;
+}
+
+.section-1-btn:hover {
+    border-radius: 3px;
+    background-color: #E31212;
+}
+
+.section-2 {
+    font-size: 0;
+    height: 170px;
+}
+
+.cell {
+    display: inline-block;
+    width: 25%;
+}
+
+.section-2-img {
+    line-height: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.section-2-description {
+    font-size: 13px;
+    color: #534141;
+    text-align: center;
+    border-right: 2px solid #534141;
+}
+
+.section-2 .cell:last-child .section-2-description {
+    border: none;
+}
+
+.section-3 {
+    padding-top: 20px;
+    background-color: #EDEAEA;
+    height: 250px;
+}
+
+.section3-img img {
+    display: block;
+    margin: 30px auto;
+}
+
+.section-3-decription {
+    text-align: center;
+    font-size: 50px;
+    color: #534141;
+}
+
+.section-4 {
+    background: url(../images/section4-bg.png) no-repeat;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+}
+
+.section-4-text {
+    padding-top: 80px;
+}
+
+.section-4-text h1 {
+    color: #fff;
+    font-size: 22px;
+}
+
+.section-4-text .hr {
+    display: inline-block;
+    margin-top: 10px;
+    width: 30px;
+    height: 20px;
+    border-top: 2px solid #fff;
+}
+
+.section-4-text p {
+    font-size: 13px;
+    color: #fff;
+}
+.section-4 .input-area input{
+	position: relative;
+	cursor: pointer;
+}
+.section-4 .input-area input[type='radio'] {
+    width: 240px;
+    height: 36px;
+    top: 48px;
+    opacity: 0;
+    z-index: 999;
+}
+
+.section-4 .input-area input[type='submit'] {
+    width: 240px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #be4f48;
+    color: #fff;
+    letter-spacing: 30px;
+    text-indent: 25px;
+    /*字符间距*/
+    display: inline-block;
+    top: 35px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.section-4 .input-area input[type='submit']:hover {
+    background-color: #E31212;
+    border-radius: 3px;
+}
+
+.section-4 .input-area .select {
+	position: relative;
+    width: 240px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #b3b3b3;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: left;
+    background: url(../images/icons/drop-down.png) 212px 8px #fff no-repeat;
+    background-size: 20px;
+    border: 1px solid #C6B3AF;
+}
+
+.section-4 .input-area .select:last-of-type {
+    visibility: hidden;
+}
+
+.section-4 .input-area .select span {
+    margin-left: 10px;
+}
+
+.section-4 .input-area .select .option {
+    width: 240px;
+    display: none;
+    background-color: #e3e3e5;
+    position: absolute;
+    top: 34px;
+    left: -2px;
+}
+
+.section-4 .input-area .select .option ul {
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid #ae7271;
+    border-top: none;
+}
+
+.section-4 .input-area .select .option ul li {
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.section-4 .input-area .select .option ul li:hover{
+	background: url(../images/icons/active-item.png) no-repeat 10px 8px #bf4e48;
+	background-size: 20px;
+	color: #fff;
+}
+
+/*adjust for position*/
+.section-4 input[type='radio']:nth-of-type(1):checked~.options .select,.section-4 input[type='radio']:nth-of-type(2):checked~.options .select{
+	top: -1px;
+}
+.section-4 input[type='radio']:nth-of-type(1):checked~.options .select-1 {
+    border: 2px solid #ae7271;
+    border-bottom: none;
+}
+
+.section-4 input[type='radio']:nth-of-type(2):checked~.options .select-2 {
+    border: 2px solid #ae7271;
+    border-bottom: none;
+}
+.section-4 input[type='radio']:nth-of-type(1):checked~.options .select-1 .option{
+    display: block;
+    z-index: 999;
+}
+
+.section-4 input[type='radio']:nth-of-type(2):checked~.options .select-2 .option{
+    display: block;
+    z-index: 999;
+}
+.section-5{
+	height: 450px;
+	background-color: #edeada;
+	text-align: center;
+	font-size: 0;
+}
+.section-5 figure{
+	display: inline-block;
+	width: 25%;
+	height: 400px;
+	position: relative;
+	box-sizing:border-box;
+}
+.section-5 figure img{
+}
+.section-5 figure h2{
+	font-size: 14px;
+	margin: 20px;
+	color: #44403f;
+}
+.section-5 figure p{
+	font-size: 12px;
+	color: #b3afac;
+}
+.section-5 figure:nth-child(2) > figcaption{
+	padding-top: 10px;
+}
+.section-5 figure:nth-child(2) > figcaption h2{
+	font-size: 24px;
+	letter-spacing: 30px;
+	text-indent: 30px;
+}
+.section-6{
+	height: 560px;
+}
+.section-6 .left{
+	width: 68%;
+	height: 560px;
+	float: left;
+	position: relative;
+	background: url(../images/section-6-bg.png) no-repeat;
+	background-size: cover;
+}
+.section-6-left-text{
+	position: relative;
+	top: 27%;
+	color: #fff;
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.section-6-left-text h1{
+	font-size: 50px;
+	line-height: 50px;
+	height: 50px;
+}
+.section-6-left-text h2{
+	font-size: 150px;
+	line-height: 150px;
+	height: 150px;
+}
+.section-6-left-text h3{
+	font-size: 30px;
+	line-height: 30px;
+	height: 30px;
+	margin: 20px;
+}
+.section-6-left-text time{
+	margin-top: 20px;
+	font-size: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+.section-6 .right{
+	height: 560px;
+	margin-left: 68%;
+	text-align: center;
+}
+
+.section-6 .right .wrapper{
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+	top: 110px;
+}
+/*input和div模拟选项卡下面的小圆点*/
+.section-6 .right .wrapper input[type='radio']{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	top: 320px;
+	left: 3px;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 10;
+}
+.section-6 .right .wrapper .list{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: relative;
+	top: 300px;
+	border:1px solid #6c6c6c;	
+}
+.section-6 .right .wrapper .list.active{
+	background-color: #6C5C5C;
+}
+.section-6 .right .wrapper .content-2,.section-6 .right .wrapper .content-3{
+	display: none;
+}
+
+.section-6 .right .wrapper .content h2{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.section-6 .right .wrapper .content h2 > small{
+	color: #be4f48;
+}
+.section-6 .right .wrapper .content p{
+	margin-bottom: 60px;
+	color: #b3afac;
+	line-height: 25px;
+	font-size: 14px;
+    transition: color .3s ease-in;
+}
+.section-6 .right .wrapper .content p:hover{
+	color: #33363F;
+}
+.section-6 .right .wrapper button{
+	width: 100px;
+	height: 35px;
+	font-size: 13px;
+	line-height: 35px;
+	border:1px solid #be4f48;
+	color: #be4f48;
+	background-color: #fff;
+	cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.section-6 .right .wrapper button:hover{
+	color: #fff;
+	background-color: #be4f48;
+	border-radius: 2px;
+}
+/*模拟js动态切换效果*/
+/*小圆图标*/
+.section-6 .right .wrapper input[type='radio']:checked~.list{
+    background-color: #fff;
+}
+.section-6 .right .wrapper input[type='radio']:first-of-type:checked~.list:first-of-type{
+    background-color: #6c5c5c;
+}
+.section-6 .right .wrapper input[type='radio']:nth-of-type(2):checked~.list:nth-of-type(2){
+    background-color: #6c5c5c;
+}
+.section-6 .right .wrapper input[type='radio']:last-of-type:checked~.list:last-of-type{
+    background-color: #6c5c5c;
+}
+/*pannel*/
+.section-6 .right .wrapper input[type='radio']:checked~.content{
+    display: none;
+}
+.section-6 .right .wrapper input[type='radio']:first-of-type:checked~.content-1{
+    display: block;
+}
+.section-6 .right .wrapper input[type='radio']:nth-of-type(2):checked~.content-2{
+    display: block;
+}
+.section-6 .right .wrapper input[type='radio']:last-of-type:checked~.content-3{
+    display: block;
+}
+.section-7{
+    height: 520px;
+}
+.section-7 .cell-wrapper{
+    width: 68%;
+    height: 520px;
+    float: left;
+    /*font-size: 0;*/
+}
+.section-7 .cell{
+    display: inline-block;
+    width: 49%;
+    height: 520px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.section-7 .cell .text-area{
+    position: relative;
+    top: 36%;
+}
+
+.section-7 .cell .text-area h3{
+    line-height: 60px;
+}
+.section-7 .cell .text-area p{
+    margin-bottom: 20px;
+}
+.section-7 .cell .text-area button{
+    width: 150px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+/*幽灵分隔线*/
+.section-7 .cell .text-area .divider{
+    color:#fff;
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    transition: width .4s ease-in-out;
+}
+.section-7 .cell-1 .text-area .divider{
+    border-top: 2px solid #fff
+}
+.section-7 .cell-2 .text-area .divider{
+    border-top: 2px solid #E84E4C;
+}
+.section-7 .cell .text-area .divider:hover{
+    width: 200px;
+}
+.section-7 .cell-1{
+    background-color: #E84E4C;
+}
+.section-7 .cell-1 .text-area{
+    color: #fff;
+}
+.section-7 .cell-1 .text-area button{
+    color: #fff;
+    border-color: #fff;
+}
+.section-7 .cell-1 .text-area button:hover{
+    color: #e84e4c;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.section-7 .cell-2 .text-area button{
+    border-color: #e84e4c;
+}
+.section-7 .cell-2 .text-area button:hover{
+    color: #fff;
+    background-color: #e84e4c;
+    border-radius: 3px;
+}
+/*使用::after伪元素形成尖角*/
+.section-7 .cell-2::after{
+    content: '';
+    position: absolute;
+    border-width: 20px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    top: 50%;
+    left: 103%;
+}
+.section-7 .img{
+    height: 520px;
+    margin-left: 68%;
+    background: url(../images/section-7-bg.png) no-repeat;
+    background-size: cover;
+}
+.section-8{
+    height: 800px;
+    text-align: center;
+}
+.section-8 .top{
+    height: 300px;
+}
+.section-8 .top .top-text-area{
+    position: relative;
+    top: 100px;
+}
+.section-8 .top .top-text-area h2{
+    font-size: 18px;
+    font-weight: normal;
+}
+.section-8 .top .top-text-area .divider{
+    color:#fff;
+    width: 30px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-top: 2px solid #E44F4B;
+    transition: width .4s ease-in-out;
+}
+.section-8 .top .top-text-area .divider:hover{
+    width: 200px;
+}
+.section-8 .top .top-text-area p{
+    font-size: 14px;
+    color: #b3afac;
+}
+.section-8 .main .left{
+    text-align: left;
+    width: 30%;
+    display: inline-block;
+}
+.section-8 .main .left .introduce{
+    width: 350px;
+    height: 130px;
+}
+.section-8 .main .left .introduce h3{
+    font-size: 16px;
+    color: #6c5c5c;
+}
+.section-8 .main .left .introduce p{
+    font-size: 14px;
+    color: #b3afac;
+    margin-bottom: 0;
+}
+.section-8 .main .left .introduce span{
+    font-size: 14px;
+    color: #b3afac;
+    float: right;
+    cursor: pointer;
+}
+.section-8 .main .right{
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    text-align: left;
+    font-size: 0;
+}
+.section-8 .main .right input,.section-8 .main .right textarea{
+    border: none;
+    outline: none;
+}
+.section-8 .main .right input[type='text']{
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    color: #4e3a4f;
+    box-sizing:border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e3e3e3;
+}
+.section-8 .main .right textarea{
+    width: 620px;
+    height: 160px;
+    font-size: 14px;
+    color: #4e3a4f;
+    box-sizing:border-box;
+    margin: 10px;
+    padding: 10px;
+    background-color: #e3e3e3;
+}
+.section-8 .main .right input[type='submit']{
+    width: 620px;
+    height: 40px;
+    font-size: 14px;
+    color: #4E3A4F;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #E3E3E3;
+    transition: all 0.4s ease-in-out;
+}
+.section-8 .main .right input[type='submit']:hover{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #B3AFAC,-1px -1px 1px #B3AFAC;
+}
+.section-8 .main .right input[type="text"]:focus,.section-8 .main .right textarea:focus {
+    border: 1px solid #E3E3E3;
+    background-color: #fff;
+}
+.section-9{
+    height: 400px;
+    text-align: center;
+    background-color: #33363f;
+}
+.section-9 .contact{
+    height: 150px;
+    color: #f7f8fc;
+    display: inline-block;
+    margin-top: 80px;
+}
+.section-9 .contact h3{
+    font-weight: normal;
+    font-size: 20px;
+}
+.section-9 .contact p{
+    font-size: 14px;
+}
+.section-9 .email-input{
+    height: 40px;
+    font-size: 0;
+}
+.section-9 .email-input input[type='email']{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    box-sizing:border-box;
+    padding-left: 10px;
+    color: #75757f;
+}
+.section-9 .email-input input[type='submit']{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 5px;
+    border: none;
+    box-sizing:border-box;
+    background-color: #75757f;
+    transition: background-color 0.4s ease-in-out;
+}
+.section-9 .email-input input[type='submit']:hover{
+    background-color: #5E5E68;
+}
+.section-9 .icons{
+    margin: 2em 0;
+}
+.section-9 .icons li{
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    margin: 0 0.5em;
+    background: url(../images/icons/icons.png) no-repeat;
+    transition: all .5s;
+}
+.section-9 .icons li:hover{
+    transform:scale(1.5);
+}
+.section-9 .icons li.qq{
+    background-position: 0 0;
+}
+.section-9 .icons li.weibo{
+    background-position: -30px 0;
+}
+.section-9 .icons li.twitter{
+    background-position: -60px 0;
+}
+.section-9 .icons li.internet{
+    background-position: -90px 0;
+}
+footer{
+    margin-top: -10px;
+    height: 60px;
+    text-align: center;
+    background-color: #30303a;
+}
+.copyright,.backToTop{
+    width: 300px;
+    height: 60px;
+    line-height: 60px; 
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+.copyright{
+    float: left;
+}
+.backToTop{
+    float: right;
+}
+.backToTop a{
+    text-decoration: none;
+    color: #fff;
+    transition:color 0.5s ease-in-out;
+}
+.backToTop a:hover{
+    color: #75757F;
+}

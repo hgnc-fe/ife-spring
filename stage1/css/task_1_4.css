@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0 0 -200px;
+}
+.corner{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fc0;
+}
+.lt-corner{
+	left: -50px;
+	top: -50px;
+}
+.rb-corner{
+	right: -50px;
+	bottom: -50px;
+}

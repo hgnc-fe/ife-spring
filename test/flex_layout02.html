@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹性盒模型</title>
+	<!-- 六个子元素随着浏览器大小改变布局而不需要用媒体查询。 -->
+</head>
+<body>
+	<ul class="flex-container">
+		<li class="flex-item">1</li>
+		<li class="flex-item">2</li>
+		<li class="flex-item">3</li>
+		<li class="flex-item">4</li>
+		<li class="flex-item">5</li>
+		<li class="flex-item">6</li>
+	</ul>
+	<style>
+		body,ul{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		.flex-container{
+			/*we first create a flex layout context*/
+			display: flex;
+			/*then we define the flow direction and if we allow the items to wrap.Remember this is the same as:
+				flex-drection:row;
+				flex-wrap:wrap;	
+			*/
+			flex-flow:row wrap;
+			/* then we define how it is distributed the remainin space*/
+			justify-content:space-around;
+		}
+		.flex-item{
+			background-color: tomato;
+			padding: 5px;
+			width: 200px;
+			height: 150px;
+			margin-top: 10px;
+
+			line-height: 150px;
+			color: white;
+			font-weight: bold;
+			font-size: 3em;
+			text-align: center;
+		}
+	</style>
+</body>
+</html>

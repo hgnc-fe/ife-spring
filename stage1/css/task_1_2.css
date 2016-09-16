@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-color: #ccc;
+	font-family: "微软雅黑"
+}
+.text-gray{
+	color: #999;
+}
+.m10{
+	margin:10px;
+}
+
+a {
+	color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 70px;
+    background-color: rgba(52, 53, 54, .8);
+    position: relative;
+}
+
+h1.logo {
+    height: 70px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+nav.nav-top {
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+nav.nav-top li {
+    float: left;
+    margin: 0 10px;
+}
+.article{
+	position: relative;
+	margin: 10px auto;
+	width: 1000px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 5px #555;
+	padding: 10px;
+}
+.article p{
+	text-indent: 2em;
+}
+.article h1{
+	margin: 5px;
+}
+.article h2{
+	margin: 5px;
+	font-size: 20px;
+}
+.article .article-info{
+	margin-top: 2px 0 2px 5px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.list li{
+	list-style: none;
+}
+figure{
+	margin: 10px 0 10px 70px;
+	width: 320px;
+	border: 1px solid #ccc;
+}
+figcaption{
+	text-indent: 0;
+	text-align: center;
+}
+figure img{
+	padding: 0 10px;
+	width: 300px;
+}
+.orderList{
+	text-indent: 0;
+	margin: 20px 0 20px 56px;
+}
+table{
+	width: 908px;
+	margin-left: 56px;
+}
+thead{
+	color: #fff;
+	background-color: rgba(52, 53, 54, .8);
+}
+tbody a{
+	color: #00f;
+	text-decoration: underline;
+}
+tfoot{
+	background-color: #ccc;
+}
+aside{
+	text-indent: 2em;
+	width: 1000px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 5px #555;
+	padding: 10px;
+	margin: 20px auto
+}
+.aside-head{
+	border-left: 3px solid #000;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+form{
+	position: relative;
+	width: 520px;
+	margin: 20px 0 20px 50px;
+}
+form label{
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+}
+.form-item{
+	width: 500px;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+.form-content{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	width: 300px;
+}
+.error-info{
+	text-indent: 240px;
+}
+form button{
+	outline: none;
+	border: none;
+	width: 900px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	height: 50px;
+	margin: 5px auto;
+	background-color: #2e6da4;
+	border-radius: 12px;
+}
+footer{
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0,0,12,.9);
+}

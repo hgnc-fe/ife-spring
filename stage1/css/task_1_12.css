@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+tbody tr:first-child,
+tbody tr:nth-child(2),
+tbody tr:nth-child(3) {
+    color: red;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+input[type='text'] {
+    margin: 20px;
+    width: 100px;
+    height: 20px;
+    transition: width 0.5s;
+}
+
+input[type='text']:focus {
+    width: 200px;
+}
+
+.banner-wrapper {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    transition: left .3s;
+    font-size: 0;
+}
+
+.banner-container .banner {
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 200px;
+}
+
+.banner:first-of-type {
+    background-color: tomato;
+}
+
+.banner:nth-of-type(2) {
+    background-color: pink;
+}
+
+.banner:last-of-type {
+    background-color: magenta;
+}
+
+.controls {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.controls a {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(12, 12, 12, .5);
+    display: inline-block;
+}
+/**
+ * 点击轮播
+ */
+#banner1:target~.banner-container {
+    left: 0;
+}
+
+#banner2:target~.banner-container {
+    left: -100%;
+}
+
+#banner3:target~.banner-container {
+    left: -200%;
+}
+
+
+/*自动轮播*/
+
+.banner-auto {
+    margin-top: 10px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-auto .banner-content {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: anim 5s infinite;
+}
+
+.banner-auto .banner-content li {
+    width: 300px;
+    height: 200px;
+    list-style: none;
+    float: left;
+}
+
+.banner-auto .banner-content li:first-of-type {
+    background-color: pink;
+}
+
+.banner-auto .banner-content li:nth-of-type(2) {
+    background-color: tomato;
+}
+
+.banner-auto .banner-content li:last-of-type {
+    background-color: magenta;
+}
+
+.banner-auto ol {
+    width: 100px;
+    height: 30px;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner-auto ol li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    background-color: rgba(12, 13, 14, .5);
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+@keyframes anim {
+    15% {
+        transform: translate(0px);
+    }
+    30% {
+        transform: translate(-300px);
+    }
+    45% {
+        transform: translate(-300px);
+    }
+    60% {
+        transform: translate(-600px);
+    }
+    75% {
+        transform: translate(-600px);
+    }
+    90% {
+        transform: translate(0);
+    }
+}

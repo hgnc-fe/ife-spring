@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 900px;
+	margin: 10px auto;
+}
+.node{
+	border:1px solid #000;
+	display: flex;
+	flex-direction:row;
+	margin: 5px;
+	padding: 15px 10px;
+}
+
+.root,.level1,.level2,.level3{
+	width: 100%;
+}
+.controls{
+	display: flex;
+	padding-left: 32px;
+	justify-content: space-around;
+}
+
+.active{
+	background-color: #f00;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十一</title>
+    <style>
+        div[id$='_container']{
+            height: 50px;
+            margin: 10px;
+        }
+        div[id$='_container'] > div{
+            display: inline-block;
+            background-color: #0f0;
+            height: 50px;
+            min-width: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            transition:all .5s;
+        }
+        .canDelete:hover{
+            background-color: #f00;
+            cursor: pointer;
+        }
+        .canDelete:hover::before{
+            content:'点击删除';
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="tagInput">Tag:</label>
+    <input type="text" id="tagInput">
+    <div id="tag_container"></div>
+
+    <label for="intrestInput">兴趣：</label>
+    <textarea cols="30" rows="10"></textarea>
+    <button>确认兴趣爱好</button>
+    <div id="intrest_container"></div>
+    
+    <script src="js/util.js"></script>
+    <script src="js/task21.js"></script>
+</body>
+
+</html>

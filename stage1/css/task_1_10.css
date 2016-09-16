@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.flex-container{
+	display: flex;
+	flex-flow:row wrap;
+	align-items:center;
+	justify-content:space-between;
+	padding: 10px;
+}
+div[class^='div']{
+	text-align: center;
+	width: 150px;
+	padding: 20px;
+	border:1px solid #f00;
+}
+.div1{
+	height: 120px;
+}
+.div2{
+	height: 100px;
+}
+.div3{
+	height: 40px;
+}
+div.div4{
+	height: 200px;
+	border: 1px solid #00f;
+}
+
+/*当可视区尺寸小于640px时，第四个div跑到第一个*/
+@media(max-width: 640px){
+	.flex-container{
+		align-items:flex-start;
+	}
+	.div4{
+		order:-1;
+	}
+}

@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 980px;
+    height: 1386px;
+    margin: 0 auto;
+}
+
+header {
+    width: 892px;
+    height: 61px;
+    border-bottom: 1px solid rgb(213, 93, 92);
+}
+
+header .logo {
+    display: inline-block;
+    width: 110px;
+    height: 61px;
+    background-color: rgb(213, 93, 92);
+    font-size: 12px;
+    font-family: "黑体";
+    color: #fff;
+    text-decoration: none;
+    line-height: 100px;
+    text-indent: 10px;
+}
+
+header time {
+    font-size: 12px;
+    font-family: "黑体";
+    color: #d45d5c;
+    line-height: 95px;
+    float: right;
+}
+
+.row {
+    clear: both;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.row1 .left {
+    float: left;
+}
+
+.row1 .left .introduce-img {
+    background: url(../images/introduce.jpg) top left no-repeat;
+    width: 641px;
+    height: 301px;
+}
+
+.row1 .left .mask {
+    -webkit-filter: blur(3px);
+}
+
+.row1 .left .mask-left {
+    float: left;
+    width: 191px;
+    height: 301px;
+    background-color: rgba(124, 150, 77, 0.5);
+}
+
+.row1 .left .mask-right {
+    float: right;
+    width: 191px;
+    height: 301px;
+    background-color: rgba(226, 170, 197, 0.5);
+}
+
+.row1 .right {
+    float: left;
+    margin-left: 47px;
+    width: 203px;
+    height: 301px;
+    border-top: 2px #cc8091 solid;
+}
+
+.row1 .right .right-title {
+    border-bottom: 2px solid #000;
+    font-style: normal;
+    font-size: 18px;
+    color: #000000;
+    font-family: "微软雅黑";
+    margin-top: 6px;
+    clear: both;
+    float: left;
+}
+
+.row1 .right .right-title em,
+.row1 .right .right-title em {
+    font-size: 24px;
+    font-style: normal;
+}
+
+.row1 .right .describe {
+    padding-top: 10px;
+    clear: both;
+    font-family: "楷体";
+    font-size: 12px;
+    color: #676767;
+    line-height: 10px;
+}
+
+.row1 .right .num {
+    font-size: 116px;
+    color: #75b86b;
+    font-family: "微软雅黑";
+    font-style: oblique;
+}
+
+.row1 .right .css-wrap {
+    margin-top: -20px;
+}
+
+.row1 .right .css-wrap em {
+    font-style: normal;
+    font-size: 55px;
+    color: #cc8091;
+    font-family: "微软雅黑";
+    float: left;
+}
+
+.row1 .right .css-wrap .css {
+    font-family: "微软雅黑";
+    color: #cc8091;
+    float: left;
+    margin-top: 17px;
+    margin-left: 4px;
+}
+
+.row1 .right .css-wrap .css .top {
+    font-size: 21px;
+}
+
+.row1 .right .css-wrap .css .tail {
+    font-size: 12px;
+}
+
+.row2 {
+    width: 641px;
+}
+
+.row2 h1 {
+    font-size: 16px;
+    font-family: "微软雅黑";
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.what,
+.when,
+.how {
+    float: left;
+    padding-right: 10px;
+    font-size: 12px;
+    color: #231815;
+    line-height: 16px;
+    opacity: .7;
+}
+
+.what {
+    width: 40%;
+}
+
+.when {
+    width: 35%;
+}
+
+.how {
+    width: 20%;
+    position: relative;
+}
+
+.what h1 {
+    color: #418c59;
+}
+
+.when h1 {
+    color: #d2994f;
+}
+
+.how h1 {
+    color: #cc7680;
+}
+
+.how .progress-wrap {
+    position: absolute;
+    top: 107px;
+}
+
+.dash {
+    margin-top: 7px;
+    width: 50px;
+    display: inline-block;
+    border: 1px dashed #000;
+}
+
+.how .progress-wrap .progress {
+    clear: both;
+    overflow: hidden;
+}
+
+.how .progress-wrap .progress div {
+    float: left;
+}
+
+.how .progress-wrap .progress .percent {
+    font-size: 12px;
+    color: #cd4a48;
+    font-style: oblique;
+    font-family: "微软雅黑";
+}
+
+.row3 .left {
+    margin-top: 18px;
+    float: left;
+    width: 48%;
+}
+
+.row3 .left h1 {
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 35px;
+    color: #11456b;
+}
+
+.row3 .left h1 em {
+    margin-right: 20px;
+    font-size: 72px;
+    color: #f5e327;
+    font-style: oblique;
+}
+
+.row3 .left h2 {
+    font-size: 33px;
+    color: #11456b;
+    font-family: "黑体";
+    font-weight: bold;
+}
+
+.line {
+    width: 415px;
+    height: 2px;
+    background-color: #11456b;
+    margin: 10px;
+}
+
+em.drop-down-text {
+    margin-right: 18px;
+    font-size: 70px;
+    color: #f5e327;
+    font-family: "微软雅黑";
+    float: left;
+}
+.row3 > .left p:first-of-type:first-letter{
+    float: left;
+    font-size: 68px;
+    color: #f5e327;
+    margin: 20px 10px 20px 0;
+}
+
+.row3 .left p {
+    text-indent: 2em;
+    font-size: 12px;
+    font-family: "宋体";
+    line-height: 16px;
+    color: #767777;
+}
+
+.row3 .left p:first-of-type {
+    text-indent: 0;
+}
+
+.row3 .left p img {
+    float: right;
+}
+
+.row3 .right {
+    width: 48%;
+    float: right;
+}
+
+.row3 .right .img-fe {
+    position: relative;
+    width: 458px;
+    height: 275px;
+    background: url(../images/img-fe.jpg);
+}
+
+.row3 .right .img-fe p {
+    line-height: 1.7;
+    margin-left: 40px;
+    border-left: 3px solid #72b16a;
+    font-size: 26px;
+    padding-left: 10px;
+    font-family: "微软雅黑";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7px;
+}
+
+.row3 .right .img-fe p i {
+    margin-left: 10px;
+    color: #72b16a;
+    font-size: 12px;
+}
+
+.mask-img-fe {
+    position: absolute;
+    background-color: rgba(97, 101, 98, 0.7);
+    width: 458px;
+    height: 61px;
+    bottom: 0;
+}
+
+.row3 .right .wrap {
+    background-color: #ccc;
+    width: 459px;
+    height: 318px;
+    margin-top: 30px;
+}
+
+.row3 .right .wrap .fe-list {
+    padding: 20px 35px;
+}
+
+.row3 .right .wrap li.fe-item {
+    list-style-image: url(../images/triangle_list_item.png);
+    font-size: 14px;
+    font-family: "宋体";
+    color: #5a5b5b;
+    line-height: 20px;
+}
+
+.row3 .right .wrap li i {
+    font-size: 12px;
+    text-align: right;
+}
+
+.row3 .right .wrap .tail {
+    overflow: hidden;
+}
+
+.row3 .right .wrap .tail .left {
+    float: left;
+    width: 240px;
+    height: 160px;
+    background-color: #D55D5C;
+}
+
+.row3 .right .wrap .tail .left div {
+    display: inline-block;
+}
+
+.zero {
+    font-size: 110px;
+    color: #fff;
+    margin: 12px 0 0 5px;
+}
+
+.seperater {
+    width: 2px;
+    height: 86px;
+    background-color: #fff;
+}
+
+.tail-left-head {
+    font-size: 21px;
+    color: #fff;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 24px;
+}
+
+.right-content {
+    position: relative;
+}
+
+.tail-left-head {
+    position: absolute;
+    width: 158px;
+    top: -90px;
+}
+
+.tail-left-content {
+    width: 158px;
+    top: -25px;
+    position: absolute;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: "黑体";
+}
+
+.row3 .right .wrap .tail .right {
+    float: right;
+    position: relative;
+    top: -160px;
+    left: 5px;
+}
+
+.row3 .right .wrap .tail .right p {
+    text-indent: 2em;
+    font-family: "黑体";
+    font-style: oblique;
+    line-height: 16px;
+    padding: 5px;
+}
+
+.quote {
+    position: absolute;
+    font-size: 72px;
+    color: #d45d5c;
+    font-family: SimHei;
+}
+
+.quote-left {
+    left: -84px;
+    top: 24px;
+}
+
+.quote-right {
+    right: 7px;
+    bottom: -20px;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: right;
+    font-family: "黑体";
+    font-size: 12px;
+    color: #d45d5c;
+}
