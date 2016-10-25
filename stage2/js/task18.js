@@ -37,7 +37,7 @@ var getInput = function() {
 var render = function() {
 
     var htmlStr=''
-    for (var k in data)
+    for (var k = 0,l = data.length;k < l;k++)
         htmlStr += ['<div data-index="',k,'" class="div">', data[k], '</div>'].join('')
     html($('#container'),htmlStr)
 }
